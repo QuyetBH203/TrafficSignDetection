@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">YOLOv5 Detection</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Detection Result</h1>
+      
+        <div class="image-container">
+            <div class="image-box">
+                <h2>Original Image:</h2>
+                <img src="{{ url_for('serve_input_image', filename=input_image) }}" alt="Original Image">
+            </div>
+            
+            <div class="image-box">
+                <h2>Processed Image:</h2>
+                <img src="{{ url_for('serve_detected_image', filename=output_image) }}" alt="Processed Image">
+            </div>
+        </div>
+        
+        <a href="/" class="back-button">Go Back</a>
+    </main>
+</body>
+</html>

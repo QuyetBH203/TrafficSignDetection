@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Đọc dữ liệu từ file CSV
-file_path = "E:/semester-1-2024-2025/HeThongThongMinh/TrafficSignDetection/Training/results.csv"  # Thay bằng đường dẫn file CSV của bạn
+file_path = "E:/semester-1-2024-2025/HeThongThongMinh/TrafficSignDetection/Training/results-exp2.csv"  # Thay bằng đường dẫn file CSV của bạn
 data = pd.read_csv(file_path)
 data.columns = data.columns.str.strip()  # Làm sạch tên cột
 

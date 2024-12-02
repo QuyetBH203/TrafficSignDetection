@@ -18,7 +18,7 @@ f1_score = 2 * (precision * recall) / (precision + recall)
 plt.figure(figsize=(12, 6))
 
 # Vẽ đường F1 score
-plt.plot(epochs, f1_score, label="F1 Score", color="purple", linestyle="-", marker="o")
+plt.plot(epochs, f1_score, label="F1 Score", color="purple", linestyle="-")
 
 # Thêm tiêu đề và nhãn
 plt.title("F1 Score over Epochs", fontsize=14)
